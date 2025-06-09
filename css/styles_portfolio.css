@@ -3,10 +3,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-    background-color: white;
+    background-color: #08789a;
 }
 
-h1, h2 {
+h1, h2, h4 {
     color: rgb(9, 67, 124);
     font-style: italic;
 }
@@ -16,12 +16,13 @@ footer {
     text-align: center;
     font-style: italic;
     background-color: rgb(154, 198, 241);
+    border-radius: 10px;
     padding: 1px;
     margin: 20px;
 }
 
 p, ul, span {
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(9, 67, 124);
 }
 
@@ -52,12 +53,15 @@ button:hover {
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #ffffff;
+    border-radius: 5px;
     font-weight: bold;
     font-style: italic;
     font-size: 12px;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #navbar a {
   float: right;
@@ -78,7 +82,30 @@ button:hover {
 }
 
 /* set css on class elements */
+.rounded-container {
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 /* div header */
+.headerMainImg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.headerMainImg img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
 .headerImg {
     display: inline-block;
     vertical-align: middle;
@@ -89,6 +116,7 @@ button:hover {
     width: 150px;
     height: 150px;
     display: block;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
 }
 
 .headerRoundImg {
@@ -104,24 +132,30 @@ button:hover {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
+    width: 75%;
+    word-wrap: break-word;
 }
 .sectionDivider {
     width: 75%;
     height: 1px;
     margin: 30 auto;
-    background: #08789a;
+    background: #f99d1b;
 }
 
 /* css for contact elements */
 .contactContainer {
+    display: flex;
     white-space: nowrap;
     text-align: center;
+    width: 80%;
+    margin: 0 auto
 }
 
 .contactPairSide {
     display: inline-block;
     vertical-align: middle;
     margin: 10px;
+    width: 100%;
 }
 
 .contactImg {
