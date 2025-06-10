@@ -33,7 +33,17 @@
                 <div class="image-box"><img src="./images/logo_dot.png"></div>
                 <div class="text-box">
                     <h1>Steve Hunt</h1>
-                    <h4><span font-size="16px">. </span><span>App & Web Development</span> | SQL Programmer | BI Consultant | MS Excel Trainer |</h4>
+                    <h4>
+                        <span class="span-title">.</span>
+                        <span>App & Web Development</span>
+                        <span class="span-title">.</span>
+                        <span>SQL Programmer</span>
+                        <span class="span-title">.</span>
+                        <span>BI Consultant</span>
+                        <span class="span-title">.</span>
+                        <span>MS Excel Trainer</span>
+                        <span class="span-title">.</span>
+                    </h4>
                     <br>
                 </div>
             </div>
@@ -85,13 +95,13 @@
                                 <li>MS Office upgrade rollout to 800+ employees situated around the UK and Eire</li><br>
                                 <li>Migrate all onsite servers on the Isle of Wight to Aarhus, Denmark</li><br>
                                 <li>Liaise with my Danish colleagues to design a new file server layout</li>
-                                    <ul>
+                                    <ul class="dashed">
                                         <li>Re-create Active Directory services to the Head Office standard</li>
                                         <li>Present the new design to the UK Directors and Senior Management team</li>
                                         <!-- <li>Implement the new file server design for the UK area of the Storage Area Network and add the AD security</li> -->
                                     </ul><br>
                                 <li>Project Manage the IT intrastructure for a new £80m technology centre on the Isle of Wight</li>
-                                    <ul>
+                                    <ul class="dashed">
                                         <li>Liaise with national and local contracters to design and implement a new server room</li>
                                         <li>Manage an international team to set up / configure new servers and network cabling</li>
                                     </ul>
@@ -115,7 +125,7 @@
                             <li>Set up UK office ready for trading new application Inside XL</li><br>
                             <li>Created Marketing strategy for the UK</li><br>
                             <li>Set up VAR (Value Added Reseller) network</li>
-                                <ul>
+                                <ul class="dashed">
                                     <li>Assisted with demonstrations, installation, configuration and training</li>
                                     <li>Helped with maintenance and support</li>
                                 </ul><br>
@@ -164,65 +174,69 @@
                 <h2>Get in Touch</h2>
                 </div>
             </div>
-            <div class="content-row">
-                <div class="text-box">
+            <br>
+            <div class="content-row-form">
+                
+            <!-- start form -->
+                <div class="text-box-form">
+                    <div align="center">
+                        <div class="contact-image"><img src="./images/form.png"> </div>
+                        <div class="contact-item"> <p>contact form</p> </div>
+                    </div>
+                    <div align="center" class="form-box">
+                        <br>       
+                        <form action="submit.php" method="post">
+                            <!--checkbox selections -->
+                            <label><span><b>Let us know what you would like help with</b></span></label><br><br>
+                            <div>
+                                <input type="checkbox" name="sqlCB" value="cbSQL">
+                                <label for="sqlCB"><span>SQL</span></label>
+
+                                <input type="checkbox" name="htmlCB" value="cbHTML">        
+                                <label for="htmlCB"><span>HTML</span></label>
+
+                                <input type="checkbox" name="cssCB" value="cbCSS">            
+                                <label for="cssCB"><span>CSS</span></label>
+
+                                <input type="checkbox" name="xlCB" value="cbXL">            
+                                <label for="xlCB"><span>MS Excel</span></label>
+                            </div>
+                            <div>
+                                <br>
+                            <!--form text input -->
+                                <label for="name"><span><b>Name </b></span></label>
+                                <input type="text" name="name"><br><br>
+                                <label for="email"><span><b>Email </b></span></label>
+                                <input type="text" name="email"><br><br>
+                                <label for="txtmulti"><span><b>Message</b></span></label><br>
+                                <textarea name="txtmulti" cols="50" rows="8"></textarea><br><br>
+                                <button>submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-box-form">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <div class="contact-image"> <img src="./images/tel.png" alt="Phone"> </div>
                     <div class="contact-item"><p><a href="tel:01234567890" class="hover-underline">01234 567890</a></p> </div>
-                </div>
-
-                <div class="text-box">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <div class="contact-image"> <img src="./images/email.png" alt="Phone"> </div>
                     <div class="contact-item"> <p><a href="mailto:steve@infineo-solutions.co.uk" class="hover-underline">steve@infineo-solutions.co.uk</a></p> </div>
-                </div>
-
-                <div class="text-box">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <div class="contact-image"> <img src="./images/web.png" alt="Phone"> </div>
-                    <div class="contact-item"> <p><a href="http://www.infineo-solutions.co.uk" class="hover-underline" target="_blank">www.infineo-solutions.co.uk</a></p> </div>  
+                    <div class="contact-item"> <p><a href="http://www.infineo-solutions.co.uk" class="hover-underline" target="_blank">www.infineo-solutions.co.uk</a></p> </div>
                 </div>
-            </div>
-            <br>
 
-            <!-- start form -->
-            <div align="center">
-                <div class="contact-image"><img src="./images/form.png"> </div>
-                <div class="contact-item"> <p>contact form</p> </div>
-            </div>
-            <br>
-
-            <div align="center">
-            
-
-            <div class="content-row">
-                <div class="form-box">       
-                    <form action="submit.php" method="post">
-                        <!--checkbox selections -->
-                        <label><span><b>Let us know what you would like help with</b></span></label><br><br>
-                        <div>
-                            <input type="checkbox" name="sqlCB" value="cbSQL">
-                            <label for="sqlCB"><span>SQL</span></label>
-
-                            <input type="checkbox" name="htmlCB" value="cbHTML">        
-                            <label for="htmlCB"><span>HTML</span></label>
-
-                            <input type="checkbox" name="cssCB" value="cbCSS">            
-                            <label for="cssCB"><span>CSS</span></label>
-
-                            <input type="checkbox" name="xlCB" value="cbXL">            
-                            <label for="xlCB"><span>MS Excel</span></label>
-                        </div>
-                        <div>
-                        <br>
-                        <!--form text input -->
-                            <label for="name"><span><b>Name </b></span></label>
-                            <input type="text" name="name"><br><br>
-                            <label for="email"><span><b>Email </b></span></label>
-                            <input type="text" name="email"><br><br>
-                            <label for="txtmulti"><span><b>Message</b></span></label><br>
-                            <textarea name="txtmulti" cols="50" rows="8"></textarea><br><br>
-                            <button>submit</button>
-                        </div>
-                    </form>
-                </div>
+                
             </div>
         </section>
         <!-- end of form -->

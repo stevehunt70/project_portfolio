@@ -24,10 +24,33 @@ footer {
     margin: 20px;
 }
 
-p, ul, span {
+p, span {
     font-size: 14px;
     color: rgb(9, 67, 124);
 }
+/*second span option for title dots */
+.span-title {
+    font-size: 30px;
+    color: #f99d1b;
+}
+
+/*start - change open dots on sub ul to dash from open circle */
+ul {
+    font-size: 14px;
+    color: rgb(9, 67, 124);
+    margin:0;
+}
+ul.dashed {
+    list-style-type: none;
+}
+ul.dashed li {
+    text-indent: -15px;
+}
+ul.dashed li::before {
+    content: "- ";
+    text-indent: -15px;
+}
+/*finish - change open dots on sub ul */
 
 a {
     text-decoration: none;
@@ -108,6 +131,17 @@ button:hover {
     flex: 3;
     min-width: 200px;
 }
+.content-row-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 50px
+}
+.text-box-form {
+    flex: 2;
+    min-width: 200px;
+}
 .image-box {
     flex: 1;
     min-width: 150px;
@@ -160,6 +194,7 @@ button:hover {
 .form-box {
     flex: 4;
     min-width: 200px;
+    display: block;
 }
 .form-box textarea {
     max-width: 100%;
