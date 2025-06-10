@@ -4,267 +4,236 @@
         <meta charset="UTF-8">
         <meta name="SteveHuntProfile" content=" width=device-width, initial-scale=1.0">
         <title>Steve Hunt Bio</title>
-        <link rel="stylesheet" href="./css/styles_portfolio.css"
+        <link rel="stylesheet" href="./css/styles-portfolio.css">
     </head>
 
 <body>
     
-    <div id="navbar">
-        <div>        
-            <a><img src="./images/logo_dot.png" width="25px" height="25px"></a>
-            <a href="">|</a>
-            <a href="#contactHead">Contact</a>
-            <a href="">|</a>
-            <a href="#projects">Projects</a>
-            <a href="">|</a>
-            <a href="#about">About</a>        
-            <a href="">|</a>
-            <a><img src="./images/logo_dot.png" width="20px" height="20px"></a>
-        </div>
+    <br>
+    <!-- rounded rectangle on the background that contains all of the text and images on the page -->
+    <div class="rounded-container" id="header-top">
+        <div id="navbar">
+            <div>        
+                <a><img src="./images/logo_dot.png" width="25px" height="25px"></a>
+                <a href="">|</a>
+                <a href="#contact-head">contact</a>
+                <a href="">|</a>
+                <a href="#projects">projects</a>
+                <a href="">|</a>
+                <!-- <a href="#about">about</a>        
+                <a href="">|</a> -->
+                <!-- <a><img src="./images/logo_dot.png" width="20px" height="20px"></a> -->
+            </div>
     </div>
-    <br>
-    <div class="rounded-container">
-    <hr class="sectionDivider" id="headerTop"></hr>
-    <br>
-    <!-- header section: logo, name, job roles and menu-->
-    <header>
-        <div class="contactContainer">
-            <div class="contactPairSide">
-                <div class="headerMainImg"><img src="./images/logo_dot.png" style=margin-right:75px></div>
-                <div class="headerItem">
-                    <div>
-                        <h1>STEVE HUNT</h1>
-                        <h4>| App & Web Development | SQL Programmer | BI Consultant | MS Excel Trainer |</h4></div>
+        <hr class="section-divider"></hr>
+        <br>
+    <!-- header section: logo, name, job roles and menu -->
+        <header>
+            <div class="content-row">
+                <div class="image-box"><img src="./images/logo_dot.png"></div>
+                <div class="text-box">
+                    <h1>Steve Hunt</h1>
+                    <h4><span font-size="16px">. </span><span>App & Web Development</span> | SQL Programmer | BI Consultant | MS Excel Trainer |</h4>
                     <br>
-                </div>            
-            </div>
-        </div>
-    </header>
-
-    <br>
-    <hr class="sectionDivider" id="about"></hr>
-    <br>
-    <!-- end of header-->
-
-    <!-- main about me and image of me-->
-    <main>
-        <div align="center"><h2><u>About Me</u></h2></div>
-        <div class="contactContainer">
-            <div class="contactPairSide">
-                <div class="headerItem">
-                    <div><p align="left">
-                        An experienced consultant with over 25 years of Business Intelligence reporting, IT service<br>
-                        and Dashboard presentation.<br>
-                        On leaving college, I started my career in accountancy working for a Porsche car garage.<br>
-                        This enabled me to get the financial experience needed for starting in the Financial Reporting<br>
-                        world installing, configuring and supporting an application entitled 'F9'.<br>
-                        My IT skills came to fruition at Vestas Wind Systems (a global alternative energy company<br>
-                        providing wind turbines to the energy industry) where I was consulting and eventually<br>
-                        employed to help with an onsite presence for the Finance Director, who was using 'F9'.<br>
-                        I was also part of the IT department who funded the team to become fully Microsoft Certified<br>
-                        Technicians. My qualified speciality area was server and security.<br>
-                        From here I progressed into running another software application company called<br>
-                        Infineo Solutions, a French owned provider in the BI Reporting sector. The software was<br>
-                        recently sold to Sage and I have purchased the UK office, of which I was the director, along<br>
-                        with all of the clients and the VARs attached to the company.<br>
-                        I have now diversified Infineo Solutions Ltd's portfolio into providing web design,<br>
-                        SQL programming and Excel training.</p></div>
                 </div>
-                <div class="headerImg">
-                    <img src="./images/steveh.jpg" class="headerRoundImg">
-                </div>                            
             </div>
-            
-        </div>
-        <div align="center">
-            <p><a href="#headerTop" class="hoverUnderline"><b>top &uarr;</b></a></p>
-        </div>
-    </main>
-    <br>
-    <hr class="sectionDivider" id="projects"></hr>
-    <br>
+        </header>
+        <br>
+        <hr class="section-divider" id="about"></hr>
+        <br>
+    <!-- end of header-->
+    <!-- start of main-->
+        <main>
+            <!-- <div><h2>About Me</h2></div> -->
+            <div class="content-row">
+                <div class="text-box">
+                    <p>
+                        As an experienced consultant with over 28 years of Business Intelligence reporting, IT service and Dashboard presentation,
+                        I started my career in accountancy working for a Porsche car garage. This enabled me to get the financial experience 
+                        needed for starting in the Financial Reporting world installing, configuring and supporting an application entitled F9.<br><br>
+                        Whilst employed by Vestas Wind Systems (a global alternative energy company providing wind turbines to the energy industry) as a Microsoft
+                        Certified IT technician, I was able to develop my IT skills in server and security.<br><br>
+                        I then had the opportunity to run a software application company, a UK based office of a French company in the BI Reporting sector.<br><br>
+                        In 2024 I purchased the UK office and am now diversifying Infineo Solutions Ltd's portfolio, providing web design, database management,
+                        SQL programming and Excel training.
+                    </p>
+                </div>
+                <div class="image-rounded"><img src="./images/steveh.jpg"></div>                
+            </div>
+        </main>
+        <br>
+        <hr class="section-divider" id="projects"></hr>
+        <br>
     <!-- end of main -->
 
     <!-- start of projects -->
     <!-- Vestas Wind Systems -->
-    <article>
-        <div align="center"><h2><u>Projects</u></h2></div>
-        <div align="center"><p><b>Vestas Wind Systems</b></p></div>
-        <div class="contactContainer">
-            <div class="contactPairSide">
-                <div class="headerImg">
-                    <img src="./images/vestas_turbine.jfif" class="headerRoundImg"">
+        <article>
+            <div class="content-row">
+                <div class="text-box">
+                    <h1>Projects Managed</h1>
                 </div>
-                <div class="headerItem">
-                    <div>
-                        <p align="left">
+            </div>
+            
+            <div class="content-row">
+                    <div class="image-rounded"><img src="./images/vestas_turbine.jfif"></div>
+                    <div class="text-box">
+                        <div><h3><b>Vestas Wind Systems</b></h3></div>
+                        <p>
                         <!-- unordered list of bullet points -->
                             <ul align="left">
-                                <li>MS Office upgrade rollout to 800+ employees situated around the UK and Eire</li>
-                                <li>Migrate all onsite servers on the Isle of Wight to Aarhus, Denmark</li>
-                                <li>Liaise with my Danish counterparts to design a new file server layout</li>
+                                <li>MS Office upgrade rollout to 800+ employees situated around the UK and Eire</li><br>
+                                <li>Migrate all onsite servers on the Isle of Wight to Aarhus, Denmark</li><br>
+                                <li>Liaise with my Danish colleagues to design a new file server layout</li>
                                     <ul>
                                         <li>Re-create Active Directory services to the Head Office standard</li>
                                         <li>Present the new design to the UK Directors and Senior Management team</li>
-                                        <li>Implement the new file server design for the UK area of the Storage Area Network and<br>
-                                            add the AD security</li>
-
-                                    </ul>
+                                        <!-- <li>Implement the new file server design for the UK area of the Storage Area Network and add the AD security</li> -->
+                                    </ul><br>
                                 <li>Project Manage the IT intrastructure for a new £80m technology centre on the Isle of Wight</li>
                                     <ul>
                                         <li>Liaise with national and local contracters to design and implement a new server room</li>
-                                        <li>Manage a team made up of UK and Danish colleagues to set up / configure all of the<br>
-                                            new servers and network cabling</li>
+                                        <li>Manage an international team to set up / configure new servers and network cabling</li>
                                     </ul>
                             </ul>
                         </p>
                     </div>
-                </div>                            
             </div>
-        </div>
-    </article>
+        </article>
+        <br>
+        <br>
     <!-- end Vestas Wind Systems -->
     <!-- Infineo Solutions Ltd -->
-    <article>
-        <div align="center" id="projects"><p><b>Infineo Solutions Ltd</b></p></div>
-        <div class="contactContainer">
-            <div class="contactPairSide">
-                <div class="headerItem">
-                    <div>
-                        <p align="left">
-                        <!-- unordered list of bullet points -->
-                            <ul align="left">
-                                <li>Set up UK office ready for trading new application Inside XL</li>
-                                <li>Create Marketing strategy for the UK</li>
-                                <li>Set up VAR (Value Added Reseller) network</li>
-                                    <ul>
-                                        <li>Assist with demonstrations, installation, configuration and training</li>
-                                        <li>Help with maintenance and support</li>
-                                    </ul>
-                                <li>Help with testing any new versions of the software from the development team </li>
-                            </ul>
-                        </p>
-                    </div>
+        <article>            
+            <div class="content-row">
+                <div class="image-rounded"><img src="./images/Insidexl.png"></div>
+                <div class="text-box">
+                    <div><h3><b>Infineo Solutions Ltd</b></h3></div>
+                    <p>
+                    <!-- unordered list of bullet points -->
+                        <ul align="left">
+                            <li>Set up UK office ready for trading new application Inside XL</li><br>
+                            <li>Created Marketing strategy for the UK</li><br>
+                            <li>Set up VAR (Value Added Reseller) network</li>
+                                <ul>
+                                    <li>Assisted with demonstrations, installation, configuration and training</li>
+                                    <li>Helped with maintenance and support</li>
+                                </ul><br>
+                            <li>Tested new versions of the software from the development team </li>
+                        </ul>
+                    </p>
                 </div>
-                <div class="headerImg">
-                    <img src="./images/Insidexl.png" class="headerRoundImg">
-                </div>                            
             </div>
-        </div>
-    </article>
-    <!-- end Infineo Solutions Ltd -->
-    <!-- S H Consultancy -->
-    <article>
-        <div align="center" id="projects"><p><b>S. H. Consultancy Ltd</b></p></div>
-        <div class="contactContainer">
-            <div class="contactPairSide">
-                <div class="headerImg">
-                    <img src="./images/consulting.jpg" class="headerRoundImg">
+        </article>
+        <br>
+        <br>
+        <br>
+        <!-- end Infineo Solutions Ltd -->
+        <!-- S H Consultancy -->
+        <article>
+            <div class="content-row">
+                <div class="image-rounded"><img src="./images/consulting.jpg"></div>
+                <div class="text-box">
+                <div><h3><b>S.H Consultancy Ltd</b></h3></div>
+
+                    <p>
+                    <!-- unordered list of bullet points -->
+                        <ul align="left">
+                            <li>Creation of Maths related Apple app for junior school aged children</li><br>
+                            <li>Designed a Production Flow System for an air ducting company; created the SQL database for data entry and extraction</li><br>
+                            <li>Creation of music quiz app (Android using Java) based on the UK charts from 1952 to present </li><br>
+                            <li>Power Bi project to extract and report on data from an old AS400 system. Creating SQL scripts with many functions to static tables and then producing a dashboard with drills in Power BI </li>
+                        </ul>
+                    </p>
                 </div>
-                <div class="headerItem">
-                    <div>
-                        <p align="left">
-                        <!-- unordered list of bullet points -->
-                            <ul align="left">
-                                <li>Creation of Maths related Apple app for junior school aged children</li>
-                                <li>Design a Production Flow System for an air ducting company. Created the back-end<br>
-                                    SQL database for data entry and extraction</li>
-                                <li>Creation of music quiz app (Android using Java) based on the UK charts from<br>
-                                    1952 to present </li>
-                                <li>Power Bi project to extract and report on data from an old AS400 system.<br>
-                                    Creating SQL scripts with many functions to static tables and then producing<br>
-                                    a dashboard with drills in Power BI </li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>                            
             </div>
-        </div>
-    </article><div align="center">
-            <p><a href="#headerTop" class="hoverUnderline"><b>top &uarr;</b></a></p>
-        </div>   
-    <!-- end S H Consultancy -->    
-    <br>
-    <hr class="sectionDivider" id="contactHead"></hr>
-    <br>
-    <!-- end of projects -->
+        </article>
+        <!-- end S H Consultancy -->
+        <div align="center">
+                <p><a href="#header-top" class="hover-underline" id="contact-head"><b>top &uarr;</b></a></p>
+        </div>    
+        <br>
+        <hr class="section-divider"></hr>
+        <br>
+        <!-- end of projects -->
 
-    <!-- contact detail area -->
-    <section>        
-        <div align="center"><h2>Contact Details</h2></div>
-
-        <div class="contactContainer">
-            <div class="contactPairSide">
-                <div class="contactImg"> <img src="./images/tel.png" alt="Phone"> </div>
-                <div class="contactItem"><p><a href="tel:01234567890" class="hoverUnderline">01234 567890</a></p> </div>
-            </div>
-
-            <div class="contactPairSide">
-                <div class="contactImg"> <img src="./images/email.png" alt="Phone"> </div>
-                <div class="contactItem"> <p><a href="mailto:steve@infineo-solutions.co.uk" class="hoverUnderline">steve@infineo-solutions.co.uk</a></p> </div>
-            </div>
-
-            <div class="contactPairSide">
-                <div class="contactImg"> <img src="./images/web.png" alt="Phone"> </div>
-                <div class="contactItem"> <p><a href="http://www.infineo-solutions.co.uk" class="hoverUnderline">www.infineo-solutions.co.uk</a></p> </div>  
-            </div>
-        </div>
-
-        <!-- start form -->
-        <div class="contactContainer">
-            <div class="contactPairSide">
-                <div class="contactImg"> <img src="./images/form.png" width="50px" height="50px"> </div>
-                <div class="contactItem"> <p>Contact Form</p> </div>
-            </div>
-        </div>
-
-        <div align="center">        
-            <form action="submit.php" method="post">
-                <!--checkbox selections -->
-                <label><span><b>Choose what your issue is related to:</b></span></label><br><br>
-                <div>
-                    <input type="checkbox" name="sqlCB" value="cbSQL">
-                    <label for="sqlCB"><span>Help with SQL</span></label>
-
-                    <input type="checkbox" name="htmlCB" value="cbHTML">        
-                    <label for="htmlCB"><span>Help with HTML</span></label><br><br>
-
-                    <input type="checkbox" name="cssCB" value="cbCSS">            
-                    <label for="cssCB"><span>Help with CSS</span></label>
-
-                    <input type="checkbox" name="xlCB" value="cbXL">            
-                    <label for="xlCB"><span>Help with MS Excel</span></label>
+        <!-- contact detail area -->
+        <section>        
+            <div class="content-row">
+                <div class="text-box">
+                <h2>Get in Touch</h2>
                 </div>
-                <br>
-                <!--form text input -->
-                <label for="name"><span><b>Name: </b></span></label>
-                <input type="text" name="name"><br><br>
-                <label for="email"><span><b>Email: </b></span></label>
-                <input type="text" name="email"><br><br>
-                <label for="txtmulti"><span><b>Message:</b></span></label><br>
-                <textarea name="txtmulti" cols="50" rows="8"></textarea><br><br>
-                <button>submit</button>
-            </form>
-        </div>
-    </section>
-    <div align="center">
-            <p><a href="#headerTop" class="hoverUnderline"><b>top &uarr;</b></a></p>
-        </div>
-    <!-- end of form -->
-     <br>
-    <hr class="sectionDivider"></hr>
+            </div>
+            <div class="content-row">
+                <div class="text-box">
+                    <div class="contact-image"> <img src="./images/tel.png" alt="Phone"> </div>
+                    <div class="contact-item"><p><a href="tel:01234567890" class="hover-underline">01234 567890</a></p> </div>
+                </div>
 
-    <!-- start of footer -->
-    <footer>
-        <div>
-            <p><b>Web Author: Infineo Solutions Ltd</b></p>
-            <p><a href="mailto:info@infineo-solutions.co.uk" class="hoverUnderline"><b>mail: infineo-solutions.co.uk</a> | <a href="tel:01234567890" class="hoverUnderline">tel: 01234 567890</a></b></p>
-        </div>        
-    </footer>
-    <!-- end of footer -->
-    <hr class="sectionDivider"></hr>
-     
+                <div class="text-box">
+                    <div class="contact-image"> <img src="./images/email.png" alt="Phone"> </div>
+                    <div class="contact-item"> <p><a href="mailto:steve@infineo-solutions.co.uk" class="hover-underline">steve@infineo-solutions.co.uk</a></p> </div>
+                </div>
+
+                <div class="text-box">
+                    <div class="contact-image"> <img src="./images/web.png" alt="Phone"> </div>
+                    <div class="contact-item"> <p><a href="http://www.infineo-solutions.co.uk" class="hover-underline" target="_blank">www.infineo-solutions.co.uk</a></p> </div>  
+                </div>
+            </div>
+            <br>
+
+            <!-- start form -->
+            <div align="center">
+                <div class="contact-image"><img src="./images/form.png"> </div>
+                <div class="contact-item"> <p>contact form</p> </div>
+            </div>
+            <br>
+
+            <div align="center">
+            
+
+            <div class="content-row">
+                <div class="form-box">       
+                    <form action="submit.php" method="post">
+                        <!--checkbox selections -->
+                        <label><span><b>Let us know what you would like help with</b></span></label><br><br>
+                        <div>
+                            <input type="checkbox" name="sqlCB" value="cbSQL">
+                            <label for="sqlCB"><span>SQL</span></label>
+
+                            <input type="checkbox" name="htmlCB" value="cbHTML">        
+                            <label for="htmlCB"><span>HTML</span></label>
+
+                            <input type="checkbox" name="cssCB" value="cbCSS">            
+                            <label for="cssCB"><span>CSS</span></label>
+
+                            <input type="checkbox" name="xlCB" value="cbXL">            
+                            <label for="xlCB"><span>MS Excel</span></label>
+                        </div>
+                        <div>
+                        <br>
+                        <!--form text input -->
+                            <label for="name"><span><b>Name </b></span></label>
+                            <input type="text" name="name"><br><br>
+                            <label for="email"><span><b>Email </b></span></label>
+                            <input type="text" name="email"><br><br>
+                            <label for="txtmulti"><span><b>Message</b></span></label><br>
+                            <textarea name="txtmulti" cols="50" rows="8"></textarea><br><br>
+                            <button>submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- end of form -->
+
+        <div align="center">
+                <p><a href="#header-top" class="hover-underline"><b>top &uarr;</b></a></p>
+        </div>
+        <br>
+        <hr class="section-divider"></hr>
+
     </div>
-
+    <!-- end of the rounded rectangle -->
 </body>
 </html>

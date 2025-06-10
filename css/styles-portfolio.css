@@ -4,11 +4,14 @@
 }
 body {
     background-color: #08789a;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    min-height: 100vh;
 }
 
-h1, h2, h4 {
+h1, h2, h3, h4 {
     color: rgb(9, 67, 124);
-    font-style: italic;
 }
 
 footer {
@@ -87,112 +90,90 @@ button:hover {
     background-color: #ffffff;
     border-radius: 30px;
     padding: 30px;
-    margin: 0 auto;
-    overflow: hidden;
 }
-
-/* div header */
-.headerMainImg {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-    width: 150px;
-    height: 150px;
-}
-
-.headerMainImg img {
-    width: 150px;
-    height: 150px;
-    display: block;
-}
-
-.headerImg {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-}
-
-.headerImg img {
-    width: 150px;
-    height: 150px;
-    display: block;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
-}
-
-.headerRoundImg {
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin: 0 auto;
-    border: 3px solid #f99d1b;
-    border-radius: 50%;
-}
-
-.headerItem {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    width: 75%;
-    word-wrap: break-word;
-}
-.sectionDivider {
-    width: 75%;
-    height: 1px;
+.section-divider {
+    width: 80%;
+    height: 3px;
     margin: 30 auto;
     background: #f99d1b;
 }
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 50px
+}
+.text-box {
+    flex: 3;
+    min-width: 200px;
+}
+.image-box {
+    flex: 1;
+    min-width: 150px;
+    margin: auto;
+}
+.image-box img {
+    max-width: 100%;
+    height: 150px;
+    display: block;
+}
+.image-rounded {
+    flex: 1;
+    min-width: 150px;
+    margin: auto;
+}
+.image-rounded img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 3px solid #f99d1b;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: block;
+}
 
 /* css for contact elements */
-.contactContainer {
-    display: flex;
-    white-space: nowrap;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto
-}
-
-.contactPairSide {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 10px;
-    width: 100%;
-}
-
-.contactImg {
+.contact-image {
     display: inline-block;
     vertical-align: middle;
     margin-right: 8px;
 }
-
-.contactImg img {
+.contact-image img {
     width: 50px;
     height: 50px;
     display: block;
 }
-
-.contactItem {
+.contact-item {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
 }
 
-.contactItem P, .contactItem a {
+.contact-item P, .contact-item a {
     text-align: center;
     text-decoration: none;
     font-size: 14px;
-    font-style: italic;
     font-weight: bold;
     color: rgb(9, 67, 124);
 }
+.form-box {
+    flex: 4;
+    min-width: 200px;
+}
+.form-box textarea {
+    max-width: 100%;
+    display: block;
+}
 
-/* contact links */
-.hoverUnderline {
+/* hover links */
+.hover-underline {
     color: rgb(9, 67, 124);
     position: relative;
     display: inline-block;
 }
-.hoverUnderline::after,
-.hoverUnderline::before {
+.hover-underline::after,
+.hover-underline::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -202,13 +183,13 @@ button:hover {
     left: 0;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.6s ease-out;
+    transition: transform 0.3s ease-out;
 }
-.hoverUnderline::before {
+.hover-underline::before {
     top: -5px;
     transform-origin: left;
 }
-.hoverUnderline:hover::after,
-.hoverUnderline:hover::before {
+.hover-underline:hover::after,
+.hover-underline:hover::before {
     transform: scalex(1);
 }
